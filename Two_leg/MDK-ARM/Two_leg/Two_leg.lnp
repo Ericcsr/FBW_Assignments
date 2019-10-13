@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"two_leg\startup_stm32f407xx.o"
+"two_leg\servo.o"
+"two_leg\main.o"
+"two_leg\stm32f4xx_it.o"
+"two_leg\stm32f4xx_hal_msp.o"
+"two_leg\user_main.o"
+"two_leg\stm32f4xx_hal_tim.o"
+"two_leg\stm32f4xx_hal_tim_ex.o"
+"two_leg\stm32f4xx_hal_rcc.o"
+"two_leg\stm32f4xx_hal_rcc_ex.o"
+"two_leg\stm32f4xx_hal_flash.o"
+"two_leg\stm32f4xx_hal_flash_ex.o"
+"two_leg\stm32f4xx_hal_flash_ramfunc.o"
+"two_leg\stm32f4xx_hal_gpio.o"
+"two_leg\stm32f4xx_hal_dma_ex.o"
+"two_leg\stm32f4xx_hal_dma.o"
+"two_leg\stm32f4xx_hal_pwr.o"
+"two_leg\stm32f4xx_hal_pwr_ex.o"
+"two_leg\stm32f4xx_hal_cortex.o"
+"two_leg\stm32f4xx_hal.o"
+"two_leg\stm32f4xx_hal_exti.o"
+"two_leg\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Two_leg\Two_leg.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Two_leg.map" -o Two_leg\Two_leg.axf
